@@ -9,7 +9,7 @@ def config = [
     nodeVersion    : '10',
     testStages     : [[
                           auroraConfigEnvironment: 'st-refapp',
-                          applicationUnderTest   : "referanse",
+                          applicationUnderTest   : "referanse-kotlin",
                           testSequence           : [
                               [
                                   stageType : 'postman',
