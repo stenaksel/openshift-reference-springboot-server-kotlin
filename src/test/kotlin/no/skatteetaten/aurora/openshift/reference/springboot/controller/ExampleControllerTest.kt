@@ -29,7 +29,6 @@ import org.springframework.test.web.client.response.MockRestResponseCreators.wit
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
 
-@Configuration
 class Config {
     @Bean
     fun meterRegistry(): MeterRegistry = Metrics.globalRegistry
