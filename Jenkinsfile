@@ -10,6 +10,7 @@ def config = [
     jiraFiksetIKomponentversjon: true,
     chatRoom                   : "#aos-notifications",
     compileProperties          : "-U",
+    openShiftBuilderVersion    : "bugfix_SITJ_650_velger_feil_ved_retag-SNAPSHOT",
     versionStrategy            : [
         [branch: 'master', versionHint: '1']
     ]
