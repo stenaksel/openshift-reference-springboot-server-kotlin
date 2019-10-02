@@ -7,6 +7,7 @@ def config = [
     credentialsId              : "github",
     javaVersion                : 11,
     nodeVersion                : '10',
+    debug                      : true,
     jiraFiksetIKomponentversjon: true,
     chatRoom                   : "#aos-notifications",
     compileProperties          : "-U",
