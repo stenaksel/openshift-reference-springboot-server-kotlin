@@ -7,7 +7,6 @@ def config = [
     credentialsId              : "github",
     javaVersion                : 11,
     nodeVersion                : '10',
-    debug                      : true,
     jiraFiksetIKomponentversjon: true,
     chatRoom                   : "#aos-notifications",
     compileProperties          : "-U",
@@ -20,4 +19,4 @@ def config = [
 fileLoader.withGit(config.pipelineScript, config.scriptVersion) {
   jenkinsfile = fileLoader.load('templates/leveransepakke')
 }
-jenkinsfile.run(config.scriptVersion, config)
+jenkinsfile.maven(config.scriptVersion, config)
