@@ -13,7 +13,8 @@ def config = [
     compileProperties          : "-U",
     openShiftBuilderVersion    : "dev_nexus3-SNAPSHOT",
     versionStrategy            : [
-        [branch: 'master', versionHint: '1']
+        [branch: 'master', versionHint: '1'],
+        [branch: 'bugfix/AOS-3687', versionHint: '0']
     ]
 ]
 fileLoader.withGit(config.pipelineScript, config.scriptVersion) {
