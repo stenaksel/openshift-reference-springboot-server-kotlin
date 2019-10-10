@@ -32,8 +32,8 @@
     <maven-enforcer-plugin.version>1.4.1</maven-enforcer-plugin.version>
 
     <maven-checkstyle-plugin.version>3.1.0</maven-checkstyle-plugin.version>
-    <checkstyle-config.version>2.1.7</checkstyle-config.version>
-    <checkstyle.version>8.23</checkstyle.version>
+    <checkstyle-config.version>2.2.0</checkstyle-config.version>
+    <checkstyle.version>8.25</checkstyle.version>
 
     <spring-boot-thin-layout.version>1.0.22.RELEASE</spring-boot-thin-layout.version>
     <asciidoctor-maven-plugin.version>1.6.0</asciidoctor-maven-plugin.version>
@@ -44,13 +44,13 @@
 
   <distributionManagement>
     <repository>
-      <id>releases</id>
-      <url>http://aurora/nexus/content/repositories/releases</url>
+      <id>releases-nexus3</id>
+      <url>https://nexus.sits.no/repository/maven-releases</url>
     </repository>
     <snapshotRepository>
-      <id>snapshots</id>
+      <id>snapshots-nexus3</id>
       <name>Internal Snapshots</name>
-      <url>http://aurora/nexus/content/repositories/snapshots</url>
+      <url>https://nexus.sits.no/repository/maven-snapshots</url>
     </snapshotRepository>
   </distributionManagement>
 
